@@ -1,0 +1,1 @@
+web: gunicorn supkit61011035.wsgi
