@@ -1,0 +1,155 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+
+<div id="mySidenav" class="sidenav">
+    <a href="#sec1">About</a>
+    <a href="#sec2">Member</a>
+    <a href="#sec3">Progress</a>
+    <a href="#sec4">Contact</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>   
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark  ">
+    <span style="color:white;font-size:30px;cursor:pointer" onclick="openNav()"> &#9776; </span>
+    <a class="navbar-brand" href="#">Welcome to Split-ACT</a>
+    <button onclick="myFunction()" class="btn btn-light ">Switch Mode</button>
+</nav>   
+<div id="sec1" class="container" style="margin-top:80px">
+          <h1>About Split-ACT</h1><br>
+          <img class="mx-auto d-block" style="height: 200px;" src="{%static './images/LOGO LAST.png'%}" alt="profile"><br>
+          <p></p>
+          <p>Split-ACT คือ web / app ที่ถูกพัฒนามาเพื่อเป็นเครื่องมือที่ช่วยในการทำงาน/กิจกรรม โดยจะเป็นเครื่องที่ช่วยแบ่งสิ่งที่ต้องทำเป็นส่วนๆ และให้สมาชิกรับผิดชอบในหน้าที่ของตนเอง</p>
+          <p>นอกจากนี้ยังสามารถติดตาม ความคืบหน้าของแต่ละคน </p>       
+</div>
+<div id="sec2" class="container" style="margin-top:80px">
+          <h1>Dev Team</h1><br>
+          <p>click button to lean more.</p><br>
+          <div align="center">
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal1">ChaMick7</button><button type="button" class="btn btn-lg btn-success" data-toggle="modal" ><a style="color: rgb(255, 255, 255);" href=" ">ChaMick7's work</a></button><br><br>
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal2">supkit23</button><button type="button" class="btn btn-lg btn-success" data-toggle="modal" ><a style="color: rgb(255, 255, 255);" href="#">supkit23's work</a></button><br><br>
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal4">stw</button><button type="button" class="btn btn-lg btn-success" data-toggle="modal" ><a style="color: rgb(255, 255, 255);" href="https://webstite61011060.herokuapp.com/">stw's work</a> </button><br><br>
+            <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal3">Miwwie</button><button type="button" class="btn btn-lg btn-success" data-toggle="modal" ><a style="color: rgb(255, 255, 255);" href=" ">Miwie's work</a></button>  
+          </div>
+</div>
+
+<div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">aka 'ChaMick7'</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>           
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Sorrawat Hayeehateng</h4>
+          <img class="mx-auto d-block rounded" style="height: 200px;" src="{%static './images/chamick.jpg'%}" alt="Cinque Terre">   
+          <p>&#160;&#160;&#160;Frontend หัวหน้าทีม</p>
+          <p>&#160;&#160;&#160;ID: 61010996</p>
+        </div>          
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>           
+      </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">aka 'supkit23'</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>           
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Suppakrit Tamseewan</h4>
+          <img class="mx-auto d-block rounded" style="height: 200px;" src="{%static './images/supkit.jpg'%}" alt="Cinque Terre">     
+          <p>&#160;&#160;&#160;UX/UI เลขาทีม</p>
+          <p>&#160;&#160;&#160;ID: 61011035</p>
+        </div>          
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>           
+      </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">aka 'Miwwie'</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>           
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Nattawat Thonghan</h4>
+          <img class="mx-auto d-block rounded" style="height: 200px;" src="{%static './images/miw2.jpg'%}" alt="Cinque Terre"> 
+          <p>&#160;&#160;&#160;DevOp</p>
+          <p>&#160;&#160;&#160;ID: 61011382</p>
+        </div>          
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>           
+      </div>
+    </div>
+</div>
+
+<div class="modal" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">aka 'stw'</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>           
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Settawat YingYongchai</h4>
+          <img class="mx-auto d-block rounded" style="height: 200px;" src="{%static './images/stw.jpg'%}" alt="Cinque Terre">    
+          <p>&#160;&#160;&#160;Backend </p>
+          <p>&#160;&#160;&#160;ID: 61011060</p>
+        </div>          
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>           
+      </div>
+    </div>
+</div>
+
+<div id="sec3" class="container" style="margin-top:80px">
+          <h1>Project Progress</h1><br>
+          <p >Split-ACT's Prototype <i class='fas fa-chevron-circle-down' style='font-size:24px'></i></p>
+          <button type="button" class="btn btn-secondary btn-lg btn-block"><a style="color: rgb(255, 255, 255);" href="https://www.figma.com/proto/kHbgtpugA0v5PibRYun86X/Project-S.A.?node-id=110%3A0&scaling=min-zoom">Prototype of Split-ACT</a></button><br>
+          <p >Split-ACT's Website <i class='fas fa-chevron-circle-down' style='font-size:24px'></i></p>
+          <button type="button" class="btn btn-info btn-lg btn-block"><a style="color: rgb(255, 255, 255);" href="https://splitact.com/">Split-ACT.com</a></button>
+</div>
+
+<div id="sec4" class="container" style="margin-top:80px">
+          <h1>supkit23's Contact</h1><br>
+          <p>ช่องทางการติดต่อ และ Profile ต่างๆของ supkit23</p>
+          <button type="button" class="btn btn-primary btn-lg btn-block"><img src="{%static './images/fb.png'%}" width="30" height="30" alt="Cinque Terre"><a style="color: rgb(255, 255, 255);" href="https://www.facebook.com/Suppakrit23">Facebook</a></button>
+          <button type="button" class="btn btn-success btn-lg btn-block" ><img src="{%static './images/line.png'%}" width="30" height="30" alt="Cinque Terre"><a style="color: rgb(255, 255, 255);" href="https://line.me/ti/p/1IRwTpPv4n">Line</a></button>
+          <button type="button" class="btn btn-dark btn-lg btn-block"><img src="{%static './images/github.png'%}" width="30" height="30" alt="Cinque Terre"><a style="color: rgb(255, 255, 255);" href="https://github.com/Supkit23">Github</a></button>
+          <button type="button" class="btn btn-danger btn-lg btn-block"><img src="{%static './images/ig.png'%}" width="30" height="30" alt="Cinque Terre"><a style="color: rgb(255, 255, 255);" href="https://www.instagram.com/ssupkitt/">Instagram</a></button>
+</div>
+
+<div class="container" style="margin-top:80px">
+    <h2 align="center">Information Engineering @King Mongkut's Institute Of Technology Ladkrabang</h2>
+    <h3 align="center">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h3>
+    <h3 align="center">1 ซอย ฉลองกรุง 1 แขวง ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</h3> 
+</div>
+
+{% endblock %}
